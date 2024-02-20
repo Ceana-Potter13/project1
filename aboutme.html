@@ -1,21 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="common_style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
+    <!-- Adapted from:
+      Title: Responsive Sidebar Menu
+      Author: Code Commerce
+      Date: January 03, 2023
+      Type: Source Code
+      Availability: https://www.youtube.com/watch?v=uy1tgKOnPB0
 
-  <p>Hello, world!</p>
+    -->
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo" style="color: #91796c">
+                <i class='bx bx-home'></i>
+                <span><strong>Home</strong></span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="assets/tinyme.png" alt="portrait" class="user-img">
+            <div>
+                <p style="color: #91796c"><strong>Ceana Lee Potter</strong></p>
+                <p style="color: #91796c">Siena 2026</p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <!-- Home Page -->
+                <a href="#">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <!-- About Me -->
+                <a href="#">
+                    <i class='bx bx-user-pin'></i>
+                    <span class="nav-item">About</span>
+                </a>
+                <span class="tooltip">About Me</span>
+            </li>
+            <li>
+                <!-- Blog -->
+                <a href="#">
+                    <i class='bx bx-pen'></i>
+                    <span class="nav-item">Blog</span>
+                </a>
+                <span class="tooltip">Blog</span>
+            </li>
+            <li>
+                <!-- To Be Determined -->
+                <a href="#">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="nav-item">TBD</span>
+                </a>
+                <span class="tooltip">To Be Determined</span>
+            </li>
+        </ul>
+    </div>
 
-  <script src="js/script.js"></script>
+    <div class="main-content">
+        <div class="container">
+            <h1>Here is the main body</h1>
+        </div>
+    </div>
 </body>
+
+<script>
+  /*
+  Responsive Navigation Bar
+  Author: Code Commerce
+  Date: January 03, 2023
+  Type: Source Code
+  Availability: https://www.youtube.com/watch?v=uy1tgKOnPB0
+  */
+  let btn = document.querySelector('#btn');
+  let sidebar = document.querySelector('.sidebar');
+
+  btn.onclick = function() {
+      sidebar.classList.toggle('active');
+  }
+</script>
 
 </html>
