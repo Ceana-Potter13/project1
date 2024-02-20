@@ -4,9 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="common_style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .container {
+            border-style: 20px solid white;
+            padding: 100px;
+            box-shadow: 2px 2px 5px #331d14;
+            font-family: "IBM Plex Mono", monospace;
+            font-size: 1.2em;
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes shadow-animation {
+            0% {
+                box-shadow: 2px 2px 5px #331d14;
+            }
+            50% {
+                box-shadow: 6px 6px 10px #331d14;
+            }
+            100% {
+                box-shadow: 2px 2px 5px #331d14;
+            }
+        }
+
+        #coffeeImg {
+            width: 150px;
+            border: solid #91796c 1px;
+            border-radius: 100px;
+            justify-content: center;
+            margin-top: 30px;
+            animation: shadow-animation 3s infinite;
+        }
+    </style>
 </head>
 <body>
     <!-- Adapted from:
@@ -17,7 +56,8 @@
       Availability: https://www.youtube.com/watch?v=uy1tgKOnPB0
 
     -->
-    <div class="sidebar">
+    <div class="sidebar" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    ">
         <div class="top">
             <div class="logo" style="color: #91796c">
                 <i class='bx bx-home'></i>
@@ -70,7 +110,12 @@
 
     <div class="main-content">
         <div class="container">
-            <h1>Here is the main body</h1>
+            <div class="index-content-wrapper">
+                <h1>"Hello World!"</h1>
+            </div>
+            <div class="index-content-wrapper">
+                <img src="assets/coffee.jpg" alt="coffee cup" id="coffeeImg">
+            </div>
         </div>
     </div>
 </body>

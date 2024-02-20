@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 /* Adapted/Modified From: 
@@ -160,6 +159,9 @@
 }
 
 .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     background-color: #f3e3db;
     min-height: 100vh;
