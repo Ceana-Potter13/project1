@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="common_style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .container {
+            border-style: 20px solid white;
+            padding: 100px;
+            box-shadow: 2px 2px 5px #331d14;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: white;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #secretMessage {
+            opacity: 0;
+            transition: all 2s ease;
+        }
+
+        #secretMessage:hover {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <!-- Adapted from:
@@ -35,7 +58,7 @@
         <ul>
             <li>
                 <!-- Home Page -->
-                <a href="#">
+                <a href="index.html">
                     <i class='bx bx-home'></i>
                     <span class="nav-item">Home</span>
                 </a>
@@ -43,15 +66,15 @@
             </li>
             <li>
                 <!-- About Me -->
-                <a href="#">
+                <a href="aboutme.html">
                     <i class='bx bx-user-pin'></i>
                     <span class="nav-item">About</span>
                 </a>
-                <span class="tooltip">About Me</span>
+                <span class="tooltip">About</span>
             </li>
             <li>
                 <!-- Blog -->
-                <a href="#">
+                <a href="blog.html">
                     <i class='bx bx-pen'></i>
                     <span class="nav-item">Blog</span>
                 </a>
@@ -59,18 +82,43 @@
             </li>
             <li>
                 <!-- To Be Determined -->
-                <a href="#">
-                    <i class='bx bx-question-mark'></i>
-                    <span class="nav-item">TBD</span>
+                <a href="cats.html">
+                    <i class='bx bxs-cat'></i>
+                    <span class="nav-item">Cats</span>
                 </a>
-                <span class="tooltip">To Be Determined</span>
+                <span class="tooltip">Cats</span>
             </li>
         </ul>
     </div>
 
     <div class="main-content">
-        <div class="container">
-            <h1>Here is the main body</h1>
+        <div class="container" style="background-color: #fefbfa">
+            <h1 style="text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #91796c; margin-bottom: 15px; color:#91796c">About Me</h1>
+            <p style="color: #91796c">
+                I am an undergraduate at Siena College
+                <br>
+                and a Software Development major.
+                <br>
+                I graduate in 2026!
+                <br>
+                <br>
+                I have two cats. One is a silver tabby
+                <br>
+                named Mojo, and the other is a black
+                <br>
+                cat called Lilly.
+                <br>
+                <br>
+                My cats seem to like learning about
+                <br>
+                computers too, considering how eager
+                <br>
+                they are to mess with all my cables!
+            </p>
+            <p id="secretMessage" style="font-size: 0.7em; margin-bottom: -18px;">
+                <br><br>
+                <em><strong>Hey, you found a secret message!</strong></em>
+            </p>
         </div>
     </div>
 </body>
