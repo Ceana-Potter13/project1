@@ -196,3 +196,8 @@
 #catLink {
     color: #331d14;
 }
+
+#blogTitle {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
