@@ -18,17 +18,31 @@
             flex-direction: column;
         }
         main article {
-            background: lightgray;
+            background: #f3e3db;
             height: 20vh;
             flex-grow: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         main nav,aside {
-            background: beige;
+            background: #f3e3db;
+        }
+        main nav {
+            border-right: 1px solid #331d14;
+        }
+        main aside {
+            border-left: 1px solid #331d14;
         }
         header,footer {
-            background: yellowgreen;
+            background: #91796c;
             height: 10vh;
             padding: 1em;
+        }
+        header {
+            border-bottom: 1px solid #331d14;
+        }
+        footer {
+            border-top: 1px solid #331d14;
         }
         @media (min-width: 576px) {
             main {
@@ -42,25 +56,95 @@
         }
     </style>
 </head>
-    <body>
+    <body style="background-color:#f3e3db">
         <header>
-            This is a header
+            <h1 style="text-align: center">The Cat Gallery</h1>
         </header>
         <main>
             <nav>
-                Nav
+                <div>
+                    <h3 style="text-decoration-line:underline; text-align:left">
+                        Lilly
+                    </h3>
+                </div>
+                <div>
+                    <p>
+                        Loves wet food
+                        <br>
+                        <br>
+                        Sits at the dish
+                        <br>
+                        waiting for more
+                        <br>
+                        when she finishes the
+                        <br>
+                        current bowl.
+                        <br>
+                        <br>
+                        Has turned off my
+                        <br>
+                        computer mid-game several
+                        <br>
+                        times.
+                        <br>
+                        <br>
+                        Constantly scheming
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/lilly.png" style="width: 100px; border-bottom: 1px solid black">
+                    <img src="assets/cat2.jpg" id="catImg">
+                    <img src="assets/cat4.jpg" id="catImg">
+                    <img src="assets/cat8.jpg" id="catImg">
+                    <img src="assets/cat9.jpg" id="catImg">
+                    <img src="assets/cat12.jpg" id="catImg">
+                </div>
             </nav>
             <article>
-                <p>
-                    we
-                </p>
+                <div class="rowOne">
+                    <img src="assets/boxhideout.png" id="catImg">
+                    <img src="assets/bedcat.png" id="catImg">
+                    <img src="assets/cat1.jpg" id="catImg">
+                    <img src="assets/cat6.jpg" id="catImg">
+                    <img src="assets/cat7.jpg" id="catImg">
+                </div>
             </article>
             <aside>
-                ee
+                <div>
+                    <h3 style="text-decoration-line:underline">Mojo</h3>
+                </div>
+                <div>
+                    <p>
+                        Loves dry food, though
+                        <br>
+                        He eats a little too much
+                        <br>
+                        Sometimes.
+                        <br>
+                        <br>
+                        He once drank toilet
+                        water, yuck.
+                        <br>
+                        <br>
+                        Acts like a dog more
+                        than a cat at times.
+                        <br>
+                        <br>
+                        Sleepy
+                    </p>
+                </div>
+                <div>
+                    <img src="assets/mojo.png" style="width: 100px; border-bottom: 1px solid black">
+                    <img src="assets/cat3.jpg" id="catImg">
+                    <img src="assets/cat5.jpg" id="catImg">
+                    <img src="assets/cat9.jpg" id="catImg">
+                    <img src="assets/cat10.jpg" id="catImg">
+                    <img src="assets/cat11.jpg" id="catImg">
+                </div>
             </aside>
         </main>
         <footer>
-            Footer
+            <h1 style="text-align: center">Return to <a href="index.html" id="catLink">Home</a></h1>
         </footer>
     </body>
 </html>

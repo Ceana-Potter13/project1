@@ -174,3 +174,25 @@
 /*
     Adaptation from Code Commerce ends with the above CSS statement
 */
+
+.ignore-css {
+    all: unset;
+}
+
+#catImg {
+    margin: 10px;
+    border: 1px solid #91796c;
+    border-radius: 10px;
+    background-color: #fefbfa;
+    padding: 2px;
+    width: 200px;
+    transition: all 1s ease;
+}
+
+#catImg:hover {
+    width: 250px;
+}
+
+#catLink {
+    color: #331d14;
+}
